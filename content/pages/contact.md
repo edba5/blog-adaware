@@ -1,12 +1,13 @@
 ---
 template: ContactPage
 slug: contact
-title: Contact Page
-featuredImage: https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/
-subtitle: This is the contact page subtitle.
-address: '404 James St, Burleigh Heads QLD 4220'
-phone: 0987 123 456
-email: example@example.com
+title: 'Datos de contacto con ADAWARE,'
+featuredImage: 'https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/'
+subtitle: Asesores de las mejores soluciones contables y administrativas
+address: |
+  Colima 158, Roma Nte., CP 06700 Ciudad de México, CDMX
+phone: (55) 3640-5410
+email: hola@adaware.com.mx
 locations:
   - lat: '-27.9654732'
     lng: '153.2432449'
