@@ -4,7 +4,7 @@ import './Form.css'
 
 export default ({
   name = 'Simple Form',
-  subject = '', // optional subject of the notification email
+  subject = 'Nuevo mensaje de la página web', // optional subject of the notification email
   action = ''
 }) => (
   <form
@@ -18,7 +18,7 @@ export default ({
       <input
         className='Form--Input'
         type='text'
-        placeholder='Name'
+        placeholder='Nombre'
         name='name'
         required
       />
@@ -27,7 +27,7 @@ export default ({
       <input
         className='Form--Input'
         type='email'
-        placeholder='Email'
+        placeholder='Correo electrónico'
         name='email'
         required
       />
@@ -36,21 +36,21 @@ export default ({
       <select
         className='Form--Input Form--Select'
         name='type'
-        defaultValue='Type of Enquiry'
+        defaultValue='Tipo de consulta'
         required
       >
         <option disabled hidden>
-          Type of Enquiry
+          Tipo de consulta
         </option>
-        <option>Need to know more</option>
-        <option>Found a bug</option>
-        <option>Want to say hello</option>
+        <option>Información general</option>
+        <option>Oportunidades de empleo</option>
+        <option>Soporte técnico</option>
       </select>
     </label>
     <label className='Form--Label'>
       <textarea
         className='Form--Input Form--Textarea'
-        placeholder='Message'
+        placeholder='Mensaje'
         name='message'
         rows='10'
         required

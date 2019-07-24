@@ -15,7 +15,7 @@ class Form extends Component {
     name: '',
     email: '',
     message: '',
-    subject: `New Submission from ${this.props.siteTitle}!`,
+    subject: `Nuevo mensaje de ${this.props.siteTitle}!`,
     _gotcha: '',
     disabled: false,
     alert: '',
@@ -77,7 +77,7 @@ class Form extends Component {
       })
       .then(
         this.resetForm({
-          alert: 'Thanks for your enquiry, we will get back to you soon.'
+          alert: 'Gracias por tu mensaje. Recibido. Ahora está en nuestra cancha.'
         })
       )
       .catch(err => {
@@ -85,7 +85,7 @@ class Form extends Component {
         this.setState({
           disabled: false,
           alert:
-            '❗️ There is a problem, your message has not been sent, please try contacting us via email'
+            '❗️ Hubo un problema técnico al enviar el mensaje, por favor escríbenos por correo electrónico.'
         })
       })
   }
@@ -117,7 +117,7 @@ class Form extends Component {
             value={this.state.name}
             onChange={this.handleChange}
             type='text'
-            placeholder='Your Name'
+            placeholder='Tu nombre'
             name='name'
             required
             disabled={this.state.disabled ? 'disabled' : ''}
@@ -130,7 +130,7 @@ class Form extends Component {
             value={this.state.email}
             onChange={this.handleChange}
             type='email'
-            placeholder='Your Email'
+            placeholder='Tu correo electrónico'
             name='email'
             required
             disabled={this.state.disabled ? 'disabled' : ''}
@@ -142,7 +142,7 @@ class Form extends Component {
             className='Form--Input Form--Textarea'
             value={this.state.message}
             onChange={this.handleChange}
-            placeholder='Message'
+            placeholder='Mensaje para nosotros'
             name='message'
             rows='10'
             required
@@ -176,7 +176,7 @@ class Form extends Component {
           value='Send'
           disabled={this.state.disabled ? 'disabled' : ''}
         >
-          Enquire
+          Enviar
         </button>
       </form>
     )
