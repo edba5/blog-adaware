@@ -8,7 +8,7 @@ excerpt: >-
   Los beneficios centrales que puedes obtener al integrar los procesos de tu
   nómina y Contabilidad.
 categories:
-  - category: News
+  - category: Noticias
 meta:
   canonicalLink: ''
   description: >-
