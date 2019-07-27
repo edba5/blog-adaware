@@ -5,6 +5,7 @@ module.exports = {
     title: 'ADAWARE, Blog',
     siteUrl: 'https://blog-adaware.netlify.com'
   },
+  pathPrefix: `/blog`,
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-yaml',

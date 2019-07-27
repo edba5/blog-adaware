@@ -1,6 +1,6 @@
 ---
 template: ContactPage
-slug: contact
+slug: contacto
 title: 'Datos de contacto con ADAWARE,'
 featuredImage: 'https://ucarecdn.com/e22a858a-b420-47af-99f6-ed54b6860333/'
 subtitle: Asesores de las mejores soluciones contables y administrativas
