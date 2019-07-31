@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: row;
+  flex-direction: ro;
 }
 
 .Nav--Links > * + * {
@@ -77,7 +77,7 @@
 .Nav--GroupLinks {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
   width: auto;
   background: white;
   /* opacity: 0; */

@@ -135,6 +135,10 @@ module.exports = {
         enableIdentityWidget: true
       }
     },
+    {
+      resolve: 'gatsby-plugin-typeform',
+      options: {}
+    },
     'gatsby-plugin-netlify' // make sure to keep it last in the array
   ]
 }

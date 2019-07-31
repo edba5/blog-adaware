@@ -1,13 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { MapPin, Smartphone, Mail } from 'react-feather'
 import { graphql } from 'gatsby'
 
 import PageHeader from '../components/PageHeader'
-import FormSimpleAjax from '../components/FormSimpleAjax'
 import Content from '../components/Content'
 import GoogleMap from '../components/GoogleMap'
 import Layout from '../components/Layout'
 import './ContactPage.css'
+import { ReactTypeformEmbed } from 'react-typeform-embed'
+
 
 // Export Template for use in CMS preview
 export const ContactPageTemplate = ({
@@ -18,7 +20,8 @@ export const ContactPageTemplate = ({
   address,
   phone,
   email,
-  locations
+  locations,
+  contentWrapper
 }) => (
   <main className="Contact">
     <PageHeader
@@ -26,6 +29,13 @@ export const ContactPageTemplate = ({
       subtitle={subtitle}
       backgroundImage={featuredImage}
     />
+    <div {...contentWrapper} style={{ height: '50vh', width: '100%' }}> 
+      <ReactTypeformEmbed 
+      style={{ position: `relative` }}
+        url="https://edbarrios.typeform.com/to/aCNCx6" 
+        mode='drawer_left'
+      />
+    </div>
     <section className="section Contact--Section1">
       <div className="container Contact--Section1--Container">
         <div>
@@ -53,16 +63,15 @@ export const ContactPageTemplate = ({
                 <Mail /> {email}
               </a>
             )}
+                        
           </div>
         </div>
 
-        <div>
-          <FormSimpleAjax name="Simple Form Ajax" />
-        </div>
+        <GoogleMap locations={locations} />
+
       </div>
     </section>
 
-    <GoogleMap locations={locations} />
   </main>
 )
 
@@ -74,6 +83,18 @@ const ContactPage = ({ data: { page } }) => (
     <ContactPageTemplate {...page.frontmatter} body={page.html} />
   </Layout>
 )
+
+ContactPageTemplate.propTypes = {
+  contentWrapper: PropTypes.object,
+};
+
+ContactPageTemplate.defaultProps = {
+  contentWrapper: {
+    height: '500px',
+    position: 'relative',
+  }
+};
+
 
 export default ContactPage
 
