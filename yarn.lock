@@ -3818,9 +3818,10 @@ dom-converter@^0.2:
   dependencies:
     utila "~0.4"
 
-dom-form-serializer@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/dom-form-serializer/-/dom-form-serializer-1.0.7.tgz#19a90f56b4d342040bf9fcc78e4f380396d3baa5"
+dom-form-serializer@^1.0.8:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/dom-form-serializer/-/dom-form-serializer-1.0.8.tgz#8b0bfadb34655525572b29c3d24379791ce655c1"
+  integrity sha512-t6v6NxyCaX9FIVyQLG1bVRfLQpoA0FVMOosfni3IX7ZbxgT45e01jllyy8qUBG/yGVyOCNlcNPNgesoJLZw8Ug==
   dependencies:
     matches-selector "^1.0.0"
 
@@ -7571,6 +7572,7 @@ markdown-table@^1.1.0:
 matches-selector@^1.0.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/matches-selector/-/matches-selector-1.2.0.tgz#d1814e7e8f43e69d22ac33c9af727dc884ecf12a"
+  integrity sha512-c4vLwYWyl+Ji+U43eU/G5FwxWd4ZH0ePUsFs5y0uwD9HUEFBXUQ1zUUan+78IpRD+y4pUfG0nAzNM292K7ItvA==
 
 md5-file@^3.1.1:
   version "3.2.3"
