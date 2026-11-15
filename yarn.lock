@@ -5611,8 +5611,7 @@ globule@^1.0.0:
     minimatch "~3.0.2"
 
 google-map-react@^1.1.2:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/google-map-react/-/google-map-react-1.1.4.tgz#ebf649b3cb985c645a0b7a05eb4e1c3f80482c80"
+  version "1.1.7"
   dependencies:
     "@mapbox/point-geometry" "^0.1.0"
     eventemitter3 "^1.1.0"
