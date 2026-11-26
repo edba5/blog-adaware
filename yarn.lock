@@ -3819,8 +3819,7 @@ dom-converter@^0.2:
     utila "~0.4"
 
 dom-form-serializer@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/dom-form-serializer/-/dom-form-serializer-1.0.7.tgz#19a90f56b4d342040bf9fcc78e4f380396d3baa5"
+  version "1.0.8"
   dependencies:
     matches-selector "^1.0.0"
 
